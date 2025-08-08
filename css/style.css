@@ -90,39 +90,50 @@ nav ul li span:hover{
 	color: var(--main-color);
 
 }
+/****** Search bar ***********/
 .search-bar{
+	display: flex;
+}
+.search-bar form {
 	display: flex;
 	width: 377px;
 	height: 49px;
 	border-color:var(--filter-bg-color) ;
 	margin: 1rem 0;
-
 }
-.search-bar .fa-location-dot{
+.search-bar form .fa-location-dot{
 	background-color: var(--main-bg-color) ;
 	width: 50px;
 	height: 49px;
 	border-radius: 15px 0 0 15px; 
 	font-size: 20px;
-	margin: auto;
 	color: black;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.search-bar input{
+.search-bar form input{
 	flex: 1;
-	border: none;
-	outline: none;
+	border: 1px solid var(--main-bg-color);
+	border-left: none;
+	border-right: none;
 }
-.search-bar button{
+.search-bar form button{
 	background-color: var(--main-color);
-	padding: 10px 50px;
+	padding: 15px 16px;
 	color: white;
+	font-size: 18px;
+	font-weight: 700;
 	border-radius: 0 15px 15px 0;
 	border: none;
-	outline: none;
 }
-.search-bar button span{
+.search-bar form button span{
 	display: none;
+}
+
+/****** filter bar ***********/
+.filterbar{
+
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
