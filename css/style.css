@@ -101,15 +101,13 @@ nav ul li a:hover{
 }
 .search-bar form {
 	display: flex;
-	width: 377px;
+	width: 375px;
 	height: 49px;
-	border-color:var(--filter-bg-color) ;
 	margin: 1rem 0;
 }
 .search-bar form .fa-location-dot{
 	background-color: var(--main-bg-color) ;
-	width: 50px;
-	height: 49px;
+	padding: 20px;
 	border-radius: 15px 0 0 15px; 
 	font-size: 20px;
 	color: black;
@@ -118,7 +116,6 @@ nav ul li a:hover{
 	align-items: center;
 }
 .search-bar form input{
-	flex: 1;
 	border: 1px solid var(--main-bg-color);
 	border-left: none;
 	border-right: none;
@@ -168,7 +165,7 @@ nav ul li a:hover{
 .filterbar i{
 	width: 22px;
 	height: 22px;
-
+	padding: 0 5px;
 }
 
 /****** info bar ***********/
@@ -236,7 +233,7 @@ nav ul li a:hover{
 	align-items: center;
 	width: 100%;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 30px 25px;
 }
 .accommodation-cards .card{
     width: 243px;
@@ -442,7 +439,6 @@ footer{
 		flex-direction: column;
 	}
 	header img{
-		width: 20%;
 		margin: auto;
 	}
 
@@ -451,6 +447,7 @@ footer{
 		justify-content: center;
 		width: 100%;
 		padding: 0;
+		margin-bottom: 1rem;
 	}
 	nav ul li:hover{
 	border-bottom: 2px solid var(--main-color);
@@ -478,6 +475,9 @@ footer{
 	.filterbar ul{
 		flex-wrap: wrap;
 		
+	}
+	.filterbar li{
+		flex:0 0 140px;
 	}
 
 
