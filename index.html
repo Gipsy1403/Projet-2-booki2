@@ -18,10 +18,11 @@
     <div class="main-container">
 		<!-- barre de navigation et logo-->
         <header>
-			<img src="/images/logo/Booki.png" alt="Logo Booki">
-			<!-- <img src="/images/logo/Booki@3x.png" alt="Logo Booki"> -->
+			<a href="/" aria-label="Accueil Booki">
+				<img src="/images/logo/Booki.png" alt="Logo Booki">
+			</a>
 			
-			<nav class="menu">
+			<nav class="menu" aria-label="Navigation principale">
 				<ul>
 					<li><a href="#link-accommodation">Hébergements</a></li>
 					<li><a href="#link-activities">Activités</a></li>
@@ -37,24 +38,27 @@
 				</div>
 				<!-- barre de recherche -->
 				<div class="search-bar">
-					<form>
+					<form aria-label="Recherche d’hébergements">
 						<i class="fa-solid fa-location-dot"></i>
 						<input type="text" name="search" id="search">
-						<button><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
+						<button>
+							<span>Rechercher</span>
+							<i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+						</button>
 					</form>
 				</div>
 				<!-- barre de filtres -->
 				<div class="filterbar title-filter">Filtres
 					<ul>
-						<li><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
-						<li><i class="fa-solid fa-person"></i>Familial</li>
-						<li><i class="fa-solid fa-heart"></i>Romantique</li>
-						<li><i class="fa-solid fa-fire"></i>Nos pépites</li>
+						<li><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Economique</li>
+						<li><i class="fa-solid fa-person" aria-hidden="true"></i>Familial</li>
+						<li><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</li>
+						<li><i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</li>
 					</ul>
 				</div>
 				<!-- information complémentaire -->
 				<div class="infobar">
-					<i class="fa-solid fa-info"></i>
+					<i class="fa-solid fa-info" aria-hidden="true"></i>
 					<p class="information">Plus de 500 logements sont disponibles dans cette ville</p>
 				</div>
 			</div>
@@ -194,9 +198,9 @@
                     </div>
 					<!-- cartes des hébergements populaires -->
                     <div class="popular-cards">
-                        <a href="#">
+                        <a href="#" title="Voir l'Hôtel Le Soleil du Matin à Marseille">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Chambre de l'Hôtel Le Soleil du Matin à Marseille, avec lit double et décoration moderne" loading="lazy">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -213,9 +217,9 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" title="Voir les Chambres d’hôtes Au cœur de l’eau à Marseille">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/aw-creative.jpg"  alt="Chambre accueillante des Chambres d’hôtes Au cœur de l’eau à Marseille, avec lit double" loading="lazy">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -232,9 +236,9 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" title="Voir l'Hôtel Bleu et Blanc à Marseille">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/febrian-zakaria2.jpg"  alt="Chambre élégante de l'Hôtel Bleu et Blanc à Marseille, avec lit double et ambiance lumineuse" loading="lazy">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -261,9 +265,9 @@
 				</div>
 				<!-- cartes des activités -->
 				<div class="activities-cards">
-					<a href="#">
+					<a href="#" title="Découvrir le Vieux-Port de Marseille">
 						<article class="card">
-							<img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port">
+							<img src="./images/activites/reno-laithienne.jpg" alt="Vue panoramique du Vieux-Port de Marseille avec ses bateaux de pêche" loading="lazy">
 							<div class="card-content">
 								<div class="card-txt">
 									<h3 class="card-title">Vieux-Port</h3>
@@ -271,9 +275,9 @@
 							</div>
 						</article>
 					</a>
-					<a href="#">
+					<a href="#" title="Visiter le Fort de Pomègues à Marseille">
 						<article class="card">
-							<img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
+							<img src="./images/activites/paul-hermann.jpg" alt="Fort de Pomègues à Marseille, construit sur une île rocheuse" loading="lazy">
 							<div class="card-content">
 								<div class="card-txt">
 									<h3 class="card-title">Fort de Pomègues</h3>
@@ -281,9 +285,9 @@
 							</div>
 						</article>
 					</a>
-					<a href="#">
+					<a href="#" title="Explorer le Parc national des Calanques à Marseille">
 						<article class="card">
-							<img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+							<img src="./images/activites/kilyan-sockalingum.jpg" alt="Falaises et mer turquoise du Parc national des Calanques à Marseille" loading="lazy">
 							<div class="card-content">
 								<div class="card-txt">
 									<h3 class="card-title">Parc national des Calanques</h3>
@@ -291,9 +295,9 @@
 							</div>
 						</article>
 					</a>
-					<a href="#">
+					<a href="#" title="Visiter la basilique Notre-Dame-de-la-Garde à Marseille">
 						<article class="card">
-							<img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+							<img src="./images/activites/florian-wehde.jpg" alt="Vue de la basilique Notre-Dame-de-la-Garde dominant Marseille" loading="lazy">
 							<div class="card-content">
 								<div class="card-txt">
 									<h3 class="card-title">Notre-Dame-de-la-Garde</h3>
@@ -309,21 +313,21 @@
 			<!-- section à propos -->
 			<div class="content-footer">
 				<h3 class="title-filter">A propos</h3>
-				<a href="">Fonctionnement du site</a>
-				<a href="">Conditions générales</a>
-				<a href="">Données et confidentialités</a>
+				<a href="#" title="En savoir plus sur le fonctionnement du site">Fonctionnement du site</a>
+				<a href="#" title="Lire nos conditions générales d'utilisation">Conditions générales</a>
+				<a href="#" title="Consulter notre politique de confidentialité">Données et confidentialités</a>
 			</div>
 			<!-- section Nos hébergements -->
 			<div class="content-footer">
 				<h3 class="title-filter">Nos hébergements</h3>
-				<a href="">Charte qualité</a>
-				<a href="">Proposer votre hôtel</a>
+				<a href="#" title="Découvrir notre charte qualité">Charte qualité</a>
+				<a href="#" title="Proposer votre hôtel sur notre site">Proposer votre hôtel</a>
 			</div>
 			<!-- section Assistance -->
 			<div class="content-footer">
 				<h3 class="title-filter">Assistance</h3>
-				<a href="">Centre d'aide</a>
-				<a href="">Nous contacter</a>
+				<a href="#" title="Accéder au centre d'aide">Centre d'aide</a>
+				<a href="#" title="Contacter notre équipe">Nous contacter</a>
 			</div>
 		</footer>
     </div>
